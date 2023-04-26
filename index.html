@@ -20,14 +20,24 @@
     </head>
     <body dir="rtl">
         <!-- Start Top Header -->
-        <div class="top-header p-relative bg-gray ptb-10">
+        <div id="home" class="top-header p-relative bg-gray ptb-10">
             <div class="container between-flex">
                 <div class="date-time d-flex">
                     <i class="fa-regular fa-clock icon"></i>
-                    <p>15:43</p>
+                    <p id="clock"></p>
                     <i class="fa-regular fa-calendar-days icon"></i>
-                    <p>2022/12/13</p>
+                    <p id="date"></p>
                 </div>
+                <!-- Dark And Light -->
+                <div id="content" class="content-mod">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fa-solid fa-sun sun"></i>
+                        <i class="fa-solid fa-moon moon"></i>
+                        <div class="switch"></div>
+                    </label>
+                </div>
+                <!-- End Dark And Light -->
                 <div class="image-ar cursor">
                     <img src="imgs/ar.png" alt="">
                 </div>
@@ -51,6 +61,7 @@
                             <a class="sections p-relative" href="#">الاقسام<i class="fa-solid fa-angle-down icon-down"></i></a>
                             <!-- Start Megamenu -->
                             <div class="mega-menu">
+                                <span class="close-menu">X</span>
                                 <div class="box">
                                     <p>بيع</p>
                                     <ul class="links">
@@ -129,17 +140,19 @@
         <div class="landing">
             <div class="overlay">
                 <div class="container">
-                    <div class="text">
-                        <p><span>أهلا بكم في</span>أكبر منصة في المملكة العربية السعودية</p>
-                    </div>
-                    <div class="box">
-                        <div class="info">
-                            <p>قم بتحميل التطبيق الأن</p>
-                            <img class="cursor" src="imgs/google.png" alt="">
-                            <img class="cursor" src="imgs/apple.png" alt="">
+                    <div class="content">
+                        <div class="text">
+                            <p><span>أهلا بكم في</span>أكبر منصة في المملكة العربية السعودية</p>
                         </div>
-                        <div class="img-phone">
-                            <img src="imgs/phone.png" alt="">
+                        <div class="box">
+                            <div class="info">
+                                <p>قم بتحميل التطبيق الأن</p>
+                                <img class="cursor" src="imgs/google.png" alt="">
+                                <img class="cursor" src="imgs/apple.png" alt="">
+                            </div>
+                            <div class="img-phone">
+                                <img src="imgs/phone.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -613,6 +626,8 @@
             </div>
         </div>
         <!-- End Footer -->
+        <!-- Start Product -->
+        <div class="product-container">
         <!-- Start Top Header product -->
         <div class="top-header-product p-relative bg-gray ptb-10">
             <div class="container between-flex">
@@ -641,7 +656,7 @@
                 <div class="links">
                     <div class="nav-product">
                         <ul>
-                            <li><a class="main" href="#">الرئيسية</a></li>
+                            <li><a class="close-nav main" href="#home">الرئيسية</a></li>
                             <li><a class="sections p-relative" href="#">الاقسام<i class="fa-solid fa-angle-down icon-down"></i></a></li>
                             <div class="information-img">
                                 <li><a class="note p-relative" href="#"><img src="imgs/note.png" alt=""></a></li>
@@ -661,6 +676,7 @@
         <!-- Start product Img -->
         <div class="product-img p-relative">
             <div class="container">
+                <div class="close"><span>X</span></div>
                 <div class="images">
                     <div class="small-imgs">
                         <img src="imgs/img9.png" alt="">
@@ -728,5 +744,8 @@
             </div>
         </div>
         <!-- End  product Img -->
+        </div>
+        <!-- End Product -->
+        <script src="js/main.js"></script>
     </body>
 </html>
