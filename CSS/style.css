@@ -860,6 +860,11 @@ header .login-btn:hover .icon-left {
     display: flex;
     align-items: center;
 }
+@media (max-width: 767px) {
+    .product-img .images {
+        margin-top: 40px;
+    }
+}
 .product-img .images .main-img {
     margin-left: 40px;
 }
@@ -1126,6 +1131,13 @@ header .login-btn:hover .icon-left {
     font-weight: 700;
     top: 180px;
     cursor: pointer;
+}
+@media (max-width: 991px) {
+    .product-container .close{
+    position: absolute;
+        top: 5px;
+        right: 20px;
+    }
 }
 /* End   Product img */
 .popup-overlay {
